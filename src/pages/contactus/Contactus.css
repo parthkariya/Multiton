@@ -1,0 +1,144 @@
+.contactus-sec {
+    width: 100%;
+    height: 100%;
+    padding-top: 0px !important;
+    margin-bottom: 80px;
+}
+
+.contactus-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.contactus-flex-part {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactus-details-flex {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contactus-icon {
+    /* color: var(--color-main); */
+    font-size: 35px !important;
+    padding: 7px !important;
+}
+
+
+.contactus-sub-head-mx-width {
+    max-width: max-content;
+    color: var(--color-main);
+    font-weight: 600;
+    /* margin-top: 40px; */
+}
+
+.contactus-addr {
+    color: var(--color-big-font);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.contactus-contact {
+    color: var(--color-big-font);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.contactus-flex-part-sec {
+    display: flex;
+    gap: 35px;
+    max-width: 650px;
+}
+
+.contactus-form-inner-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.c-txt {
+    border: 1px solid gray;
+    height: 40px;
+}
+
+.c-lbl {
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.c-msg-txt {
+    border: 1px solid gray;
+    height: 40px;
+    height: 160px;
+    padding: 0.5rem;
+}
+
+.contactus-form-first-part {
+    min-width: 325px;
+}
+
+.contactus-form-inner-flex-mx-width {
+    max-width: 650px;
+}
+
+.c-lbl-first {
+    margin-top: 0px !important;
+}
+
+.contactus-sub-heading-flex {
+    max-width: 995px;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactus-form-heading-margin {
+    margin-bottom: 20px;
+}
+
+.c-form-btn {
+    margin-top: 20px;
+    height: 40px;
+    background: var(--color-big-font);
+    color: var(--color-golden);
+    font-weight: 600;
+    font-size: 120%;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.c-form-btn:hover {
+    color: var(--color-big-font);
+    background: var(--color-main);
+    border: var(--color-golden);
+}
+
+
+/* Media Query */
+
+@media screen and (max-width:1000px) {
+    .contactus-flex {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .contactus-flex-part-sec {
+        flex-direction: column;
+        gap: 0px;
+    }
+}

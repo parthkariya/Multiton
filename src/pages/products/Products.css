@@ -1,0 +1,132 @@
+.ourproduct-sec {
+    width: 100%;
+    height: 100%;
+    /* margin-top: 80px; */
+    padding-top: 0px !important
+}
+
+.ourproduct-con {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.product-head-clr-chng {
+    color: var(--color-big-head);
+    font-weight: 800;
+    text-align: center;
+}
+
+/*  */
+
+.trustee-page-card-container {
+    /* padding-top: 25px; */
+}
+
+.trustee-page-card-table {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    row-gap: 35px;
+
+}
+
+
+.trustee-pg-card {
+    position: relative;
+    width: 240px;
+    height: 310px;
+    margin: 20px;
+}
+
+.trustee-pg-card .facee {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    /* border-radius: 10px; */
+    overflow: hidden;
+    transition: .5s;
+}
+
+.trustee-pg-card .frontt {
+    transform: perspective(600px) rotateY(0deg);
+    /* box-shadow: 0 5px 10px #000; */
+}
+
+.trustee-pg-card .frontt img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: unset;
+}
+
+.trustee-pg-card .frontt h5 {
+    position: absolute;
+    bottom: -8px;
+    width: 100%;
+    height: 46px;
+    line-height: 20px;
+    color: white;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trustee-pg-card .backk {
+    transform: perspective(600px) rotateY(180deg);
+    /* background: var(--themecolor, #c6c09c); */
+    background: var(--color-main);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.trustee-pg-card .backk h3 {
+    font-size: 30px;
+    /* margin-top: 20px; */
+    letter-spacing: 2px;
+}
+
+.trustee-pg-card .backk p {
+    letter-spacing: 1px;
+}
+
+.trustee-pg-card:hover .frontt {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.trustee-pg-card:hover .backk {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.box {
+    /* text-align: center; */
+    color: var(--color-big-font);
+}
+
+.ourpoduct-card-head {
+    color: var(--color-big-head);
+    font-weight: 600;
+}
+
+.card-btn-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width:991px) {
+    .trustee-page-card-container {
+        /* margin-top: -50px; */
+    }
+}
